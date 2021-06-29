@@ -14955,7 +14955,24 @@ Launching subshell <span class="k">in</span> virtual environment...
 <p><img src="https://media.giphy.com/media/xTiTng7eyNZuXl7GzC/giphy.gif" alt="GOOD LUCK"></p>
 
 </div>
-</div></div></section></section>
+</div></div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Example: how to run:</p>
+<div class="highlight"><pre><span></span>➜  dev mkdir coloramapy2 <span class="o">&amp;&amp;</span> <span class="nb">cd</span> coloramapy             // Create the directory and get <span class="k">in</span> it
+
+➜  dev cat <span class="s">&lt;&lt;EOF &gt; main.py                            // Write python file</span>
+<span class="s">heredoc&gt; from colorama import Fore</span>
+<span class="s">print Fore.RED + &#39;I know how to use pipenv!!!&#39;</span>
+<span class="s">heredoc&gt; EOF</span>
+
+➜  coloramapy2 pipenv install --python <span class="m">2</span>.7 colorama  // Create pipenv with python <span class="m">2</span>.7 and colorama pack
+
+➜  coloramapy2 pipenv run python main.py             // Run main.py
+</pre></div>
+
+</div>
+</div></section></section>
 </div>
 </div>
 </body>
